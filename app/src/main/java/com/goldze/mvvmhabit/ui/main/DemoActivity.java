@@ -30,7 +30,12 @@ public class DemoActivity extends BaseActivity<ActivityDemoBinding, DemoViewMode
     @Override
     public void initParam() {
         super.initParam();
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
